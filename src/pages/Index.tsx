@@ -3,7 +3,6 @@ import { AboutServer } from "@/components/AboutServer";
 import { SocialVote } from "@/components/SocialVote";
 import { FloatingSidebar } from "@/components/FloatingSidebar";
 import { Footer } from "@/components/Footer";
-import { ArrowRight, ArrowLeft } from "lucide-react";
 
 const Index = () => {
   return (
@@ -14,13 +13,9 @@ const Index = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-white text-center shadow-glow animate-slide-in-right">
               AetharCraft
             </h1>
-            <div className="flex items-center gap-2 animate-slide-in-left">
-              <ArrowLeft className="text-primary w-6 h-6" />
-              <p className="text-lg md:text-xl text-gray-300 shadow-glow">
-                Where Adventure Meets Innovation
-              </p>
-              <ArrowRight className="text-primary w-6 h-6" />
-            </div>
+            <p className="text-lg md:text-xl text-gray-300 shadow-glow animate-slide-in-left">
+              Where Adventure Meets Innovation
+            </p>
           </div>
         </div>
         
