@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, Discord, Twitter, Vote } from 'lucide-react';
+import { Menu, X, MessageSquare, Twitter, ThumbsUp } from 'lucide-react';
 
 export const FloatingSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ export const FloatingSidebar = () => {
               href="#"
               className="flex items-center gap-2 text-white hover:text-primary transition-colors"
             >
-              <Discord className="w-5 h-5" />
+              <MessageSquare className="w-5 h-5" />
               <span>Discord</span>
             </a>
             <a
@@ -38,7 +38,7 @@ export const FloatingSidebar = () => {
               href="#"
               className="flex items-center gap-2 text-white hover:text-primary transition-colors"
             >
-              <Vote className="w-5 h-5" />
+              <ThumbsUp className="w-5 h-5" />
               <span>Vote</span>
             </a>
           </div>
