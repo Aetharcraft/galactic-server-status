@@ -41,6 +41,7 @@ export default {
         "float": "float 6s ease-in-out infinite",
         "slide-in-right": "slide-in-right 1s ease-out",
         "slide-in-left": "slide-in-left 1s ease-out",
+        "pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       keyframes: {
         float: {
