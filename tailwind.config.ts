@@ -47,7 +47,11 @@ export default {
         },
       },
       backgroundImage: {
-        "space-gradient": "linear-gradient(102.3deg, rgba(147,39,143,1) 5.9%, rgba(234,172,232,1) 64%, rgba(246,219,245,1) 89%)",
+        "space-gradient": "linear-gradient(102.3deg, rgba(26,31,44,1) 5.9%, rgba(126,105,171,1) 64%, rgba(155,135,245,1) 89%)",
+      },
+      boxShadow: {
+        'glow': '0 0 15px rgba(155,135,245,0.5)',
+        'glow-strong': '0 0 25px rgba(155,135,245,0.7)',
       },
     },
   },

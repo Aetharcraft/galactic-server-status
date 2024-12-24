@@ -19,7 +19,6 @@ export const ServerStatus = () => {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  // Simulated player count update
   useEffect(() => {
     const interval = setInterval(() => {
       setPlayerCount(Math.floor(Math.random() * 50));
@@ -28,7 +27,7 @@ export const ServerStatus = () => {
   }, []);
 
   return (
-    <div className="bg-space-dark p-6 rounded-lg border border-primary/20 backdrop-blur-sm">
+    <div className="bg-space-dark p-6 rounded-lg border border-primary/20 backdrop-blur-sm shadow-glow hover:shadow-glow-strong transition-all duration-300">
       <div className="flex items-center gap-4 mb-4">
         <Server className="w-6 h-6 text-primary" />
         <h2 className="text-xl font-semibold text-white">Server Status</h2>
@@ -37,7 +36,7 @@ export const ServerStatus = () => {
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between bg-black/20 p-4 rounded-md">
           <div className="flex items-center gap-2">
-            <span className="text-green-400">●</span>
+            <span className="text-green-400 animate-pulse">●</span>
             <span className="text-white">Online</span>
           </div>
           <div className="flex items-center gap-2">

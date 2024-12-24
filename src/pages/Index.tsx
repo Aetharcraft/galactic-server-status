@@ -1,12 +1,13 @@
 import { ServerStatus } from "@/components/ServerStatus";
 import { AboutServer } from "@/components/AboutServer";
 import { SocialVote } from "@/components/SocialVote";
+import { FloatingSidebar } from "@/components/FloatingSidebar";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-space-dark bg-space-gradient">
       <div className="container mx-auto py-12 px-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-white text-center mb-12">
+        <h1 className="text-4xl md:text-6xl font-bold text-white text-center mb-12 shadow-glow">
           AetharCraft
         </h1>
         
@@ -16,6 +17,7 @@ const Index = () => {
           <SocialVote />
         </div>
       </div>
+      <FloatingSidebar />
     </div>
   );
 };
