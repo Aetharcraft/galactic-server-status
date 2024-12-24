@@ -39,15 +39,25 @@ export default {
       },
       animation: {
         "float": "float 6s ease-in-out infinite",
+        "slide-in-right": "slide-in-right 1s ease-out",
+        "slide-in-left": "slide-in-left 1s ease-out",
       },
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        "slide-in-right": {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "slide-in-left": {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
       },
       backgroundImage: {
-        "space-gradient": "linear-gradient(102.3deg, rgba(26,31,44,1) 5.9%, rgba(126,105,171,1) 64%, rgba(155,135,245,1) 89%)",
+        "space-gradient": "linear-gradient(102.3deg, rgba(26,31,44,1) 5.9%, rgba(78,65,107,1) 64%, rgba(99,86,157,1) 89%)",
       },
       boxShadow: {
         'glow': '0 0 15px rgba(155,135,245,0.5)',
